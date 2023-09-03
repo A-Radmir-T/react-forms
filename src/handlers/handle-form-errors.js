@@ -3,7 +3,6 @@ import { logDOM } from '@testing-library/react'
 
 export const handleFormErrors = (fieldEls, currentFieldName = '', touchedField) => {
 	const formState = {
-		fields: { [currentFieldName]: { touched: true } },
 		errors: {},
 		isValid: false,
 		focusSubmit: false,
