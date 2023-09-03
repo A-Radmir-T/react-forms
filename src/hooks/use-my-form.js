@@ -3,7 +3,7 @@ import { handleFormErrors } from '../handlers'
 import { registerValidatorForms } from '../utils'
 
 export const useMyForm = () => {
-	const initialFormState = { isValid: false, errors: {}, fields: {}, focusSubmit: false }
+	const initialFormState = { isValid: false, errors: {}, focusSubmit: false }
 	const [fieldsValue, setFieldsValue] = useState({})
 	const [formState, setFormState] = useState(initialFormState)
 	const [touchedFields, setTouchedFields] = useState({})
